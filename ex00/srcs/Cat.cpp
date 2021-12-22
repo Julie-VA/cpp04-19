@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 13:37:48 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/20 15:52:45 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/22 12:18:12 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Cat::Cat(void) : Animal("Cat")
 	std::cout << "Default Cat constructor called" << std::endl;
 }
 
-Cat::Cat(Cat const &src)
+Cat::Cat(Cat const &src) : Animal(src)
 {
 	*this = src;
 	std::cout << "Cat copy constructor called" << std::endl;

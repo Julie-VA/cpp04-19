@@ -6,12 +6,13 @@
 #    By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/20 13:23:11 by rvan-aud          #+#    #+#              #
-#    Updated: 2021/12/20 17:35:40 by rvan-aud         ###   ########.fr        #
+#    Updated: 2021/12/22 12:08:58 by rvan-aud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		=	main.cpp				\
 				srcs/Animal.cpp			\
+				srcs/Brain.cpp			\
 				srcs/Cat.cpp			\
 				srcs/Dog.cpp			\
 

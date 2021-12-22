@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 13:30:24 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/20 15:52:22 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/22 12:41:59 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Animal::Animal(std::string type)
 
 Animal::~Animal(void)
 {
-	std::cout << "Animal destructor called" << std::endl;
+	std::cout << "Animal " << this->_type << " destructor called" << std::endl;
 }
 
 Animal	&Animal::operator=(Animal const &rhs)

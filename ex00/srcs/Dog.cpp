@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 13:54:18 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/20 15:52:51 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/22 12:18:21 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Dog::Dog(void) : Animal("Dog")
 	std::cout << "Default Dog constructor called" << std::endl;
 }
 
-Dog::Dog(Dog const &src)
+Dog::Dog(Dog const &src) : Animal(src)
 {
 	*this = src;
 	std::cout << "Dog copy constructor called" << std::endl;
