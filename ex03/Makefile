@@ -6,17 +6,16 @@
 #    By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/20 13:23:11 by rvan-aud          #+#    #+#              #
-#    Updated: 2021/12/22 14:05:46 by rvan-aud         ###   ########.fr        #
+#    Updated: 2021/12/22 17:11:29 by rvan-aud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		=	main.cpp				\
-				srcs/Animal.cpp			\
-				srcs/Brain.cpp			\
-				srcs/Cat.cpp			\
-				srcs/Dog.cpp			\
+SRCS		=	main.cpp		\
+				AMateria.cpp	\
+				Cure.cpp		\
+				Ice.cpp			\
 
-NAME		= ex02
+NAME		= ex03
 
 CXX			= clang++
 
