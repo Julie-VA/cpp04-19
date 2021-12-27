@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 12:05:00 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/22 13:55:57 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/27 15:56:19 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int	main(void)
 		for (int i = 0; i < 10; i++)
 		{
 			if (i % 2)
-				std::cout << ((Cat *)animals[0])->getBrain()->getIdea(i) << std::endl;
+				std::cout << ((Cat *)animals[i])->getBrain()->getIdea(i) << std::endl;
 			else
-				std::cout << ((Dog *)animals[0])->getBrain()->getIdea(i) << std::endl;
+				std::cout << ((Dog *)animals[i])->getBrain()->getIdea(i) << std::endl;
 		}
 		std::cout << std::endl;
 

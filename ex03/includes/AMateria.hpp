@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Character.hpp                                      :+:      :+:    :+:   */
+/*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/22 17:17:34 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/22 17:25:03 by rvan-aud         ###   ########.fr       */
+/*   Created: 2021/12/22 15:48:48 by rvan-aud          #+#    #+#             */
+/*   Updated: 2021/12/23 14:29:06 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+#include <iostream>
 #include "ICharacter.hpp"
 
-class	Character : public ICharacter
+class AMateria
 {
 	public:
 
-		Character(void);
-		Character(std::string);
-		Character(Character const &src);
-		~Character(void);
+		AMateria(void);
+		AMateria(std::string const & type);
+		AMateria(AMateria const &src);
+		virtual ~AMateria(void);
 
-		Character	&operator=(Character const &rhs);
+		AMateria	&operator=(AMateria const &rhs);
 
-	private:
+		std::string const & getType(void) const; //Returns the materia type
 
-		std::string	_name;
-		AMateria	_materias[4];
+		virtual AMateria* clone(void) const = 0;
+		virtual void use(ICharacter& target);
+
+	protected:
+
+		std::string	_type;
 };
